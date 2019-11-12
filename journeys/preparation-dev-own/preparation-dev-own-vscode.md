@@ -14,5 +14,8 @@ You are going to install the required VS Code extensions and optionally connect 
 |6.| Depending on your prefererred programming language/technology you will need to install other pieces, like e.g. .NET Core, NodeJS etc. *[Here is how you can install the latest .NET Core Version on Linux](https://dotnet.microsoft.com/download/linux-package-manager/ubuntu16-04/sdk-current)*
 |7.| Create an IoT Edge Solution, when asked for a container registry please point to your Azure Container Registry [:blue_book: hints for this challenge](preparation-dev-own-vs-hints.md#Create-a-new-IoT-Edge-Solution)
 |8.| Set credentials for your Azure Container Regisry in the *.env* file
+|9.| Explore *deployment.template.json* to understand the deployment manifest structure
+|10.| Now build container images for your modules and push them into your container registry (*Hint: use the IoT Edge Extension to "Build and Push IoT Edge Solution"*) 
+|11.| Create a deployment using target condition ```deviceId='<YOUR_DEVICE_ID>'``` (*Hint: use the IoT Edge Extension to create a "Deployment at Scale" and provide your deployment manifest*)
 
 In case you would like to have more information about debugging options and various tools available for IoT Edge development, please refer to *[this documentation](https://docs.microsoft.com/en-us/azure/iot-edge/development-environment)*
